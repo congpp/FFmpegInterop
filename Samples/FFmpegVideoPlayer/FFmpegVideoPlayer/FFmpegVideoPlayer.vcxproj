@@ -56,12 +56,12 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir)third_party\Duilib\;F:\Git\FFmpegInterop\ffmpeg\Build\Windows7\x86\include;F:\Git\SDL\SDL2-2.0.9-bin\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)third_party\Duilib\;$(SolutionDir)ffmpeg\Build\Windows7\x86\include;$(SolutionDir)SDL\SDL2-2.0.9-bin\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(Outdir)lib;F:\Git\SDL\SDL2-2.0.9-bin\lib\x86;F:\Git\FFmpegInterop\ffmpeg\Build\Windows7\x86\bin</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(Outdir)lib;$(SolutionDir)SDL\SDL2-2.0.9-bin\lib\x86;$(SolutionDir)ffmpeg\Build\Windows7\x86\bin</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
